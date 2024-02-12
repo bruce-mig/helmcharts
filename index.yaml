@@ -3,7 +3,7 @@ entries:
   nginx-ingress:
   - apiVersion: v2
     appVersion: 3.4.2
-    created: "2024-02-08T11:41:30.037754577+02:00"
+    created: "2024-02-12T15:03:52.276375482+02:00"
     description: This is the one that I put there.
     digest: 215d3ec6327af9ef6effd70d0652002f912d837921d50680638f4ec3611c9b4d
     home: https://github.com/nginxinc/kubernetes-ingress
@@ -20,8 +20,19 @@ entries:
     - https://github.com/nginxinc/kubernetes-ingress/tree/v3.4.2/charts/nginx-ingress
     type: application
     urls:
-    - nginx-ingress-1.1.2.tgz
+    - https://github.com/bruce-mig/helmcharts/nginx-ingress-1.1.2.tgz
     version: 1.1.2
+  simple-bank:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2024-02-12T15:03:52.292122282+02:00"
+    description: A simple bank application written in Go.
+    digest: dc9d3e8a61a12df178ce686b6496e9293e4830451985c700915ef3e7330ac014
+    name: simple-bank
+    type: application
+    urls:
+    - https://github.com/bruce-mig/helmcharts/simple-bank-0.1.0.tgz
+    version: 0.1.0
   wordpress:
   - annotations:
       category: CMS
@@ -35,7 +46,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.4.3
-    created: "2024-02-08T11:41:30.073248477+02:00"
+    created: "2024-02-12T15:03:52.370535482+02:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -69,6 +80,6 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
     urls:
-    - wordpress-19.2.5.tgz
+    - https://github.com/bruce-mig/helmcharts/wordpress-19.2.5.tgz
     version: 19.2.5
-generated: "2024-02-08T11:41:30.032636877+02:00"
+generated: "2024-02-12T15:03:52.250682982+02:00"

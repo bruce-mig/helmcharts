@@ -1,0 +1,13 @@
+apiVersion: v2
+name: simple-bank
+description: A simple bank application written in Go.
+type: application
+version: 0.1.0
+appVersion: "latest"
+# dependencies:
+#   - name: redis
+#     version: ^18.x
+#     repository: https://charts.bitnami.com/bitnami
+#   - name: postgresql
+#     version: ^14.x
+#     repository: https://charts.bitnami.com/bitnami
