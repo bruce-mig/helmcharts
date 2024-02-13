@@ -66,14 +66,16 @@ cpu: 500m
 protocol: TCP
 service:
   name: simple-bank-api-service
-  type: NodePort
+  type: ClusterIP
   ports:
   - protocol: TCP
     port: 80
+    # port: 30005
     targetPort: http-server
     name: http-service
   - protocol: TCP
     port: 90
+    # port: 30010
     targetPort: grcp-server
     name: grpc-service
 httpPort: 80
