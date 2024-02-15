@@ -1,6 +1,6 @@
 ## helmcharts
 
-This contains some example helm charts
+This repo contains personalised helm charts for Bruce Migeri's [github projects](https://github.com/bruce-mig)
 
 #### IP address of minikube node
 
